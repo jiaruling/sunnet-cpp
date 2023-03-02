@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Sunnet.h
+vector
+-
+Worker.h
+../include/Worker.h
+
+../include/Worker.h
+thread
+-
+
+/app/sunnet/src/Sunnet.cpp
+iostream
+-
+Sunnet.h
+/app/sunnet/src/Sunnet.h
+
+/app/sunnet/src/Worker.cpp
+iostream
+-
+unistd.h
+-
+Worker.h
+/app/sunnet/src/Worker.h
+
+/app/sunnet/src/main.cpp
+Sunnet.h
+/app/sunnet/src/Sunnet.h
+
